@@ -1,0 +1,11 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "isCreatingSolution": true,
+    "environment": "spo",
+    "version": "1.5.1",
+    "libraryName": "sky-ui",
+    "libraryId": "adb53017-0fc4-4678-b30d-7a29710c589d",
+    "packageManager": "npm",
+    "componentType": "webpart"
+  }
+}

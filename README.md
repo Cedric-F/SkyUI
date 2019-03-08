@@ -6,14 +6,15 @@ SkyUI is a discontinued SharePoint module project that displays a Skype for Busi
 
 It was meant for companies that wanted to see an updated list of a specific group on any page of their SharePoint solutions.
 
-Generated with Yeoman, coded in TypeScript and React, its light interface is based on the official SfB software's design.
+Generated with Yeoman, coded in TypeScript and React, its light interface is based on the Microsoft's SfB software's design.
 
 ## Requires
 
-* Microsoft Azure AD
+* Office 365
 * A SharePoint solution
+* An Azure AD environment
 * A Skype for Business **Online** plan
-* Admin credentials for the above items
+* Admin credentials for all the above
 
 ## Deployment
 
@@ -43,3 +44,7 @@ This package produces the following:
 - gulp serve - TODO
 - gulp bundle - TODO
 - gulp package-solution - TODO
+
+## Disclaimer
+
+Most of the tools mentioned and used in the development of this plugin are the property of Microsoft, not mine.

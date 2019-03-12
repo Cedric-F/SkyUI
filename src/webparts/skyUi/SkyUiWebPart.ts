@@ -48,7 +48,7 @@ export default class SkyUiWebPart extends BaseClientSideWebPart<ISkyUiWebPartPro
   }
 
   /*
-   * A Property Panel used to provide the module with the necessary authentifications settings.
+   * A Property Panel used to provide the module with the necessary authentications settings.
    * API keys are provided by Microsoft's documentation on their Skype Development Kit.
    * Client ID is a key provided by Microsoft Azure Active Directory when registering the application.
    * Reply URL is the page URL on which is loaded the application. Also required in AAD during application's registration.

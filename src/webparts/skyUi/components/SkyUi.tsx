@@ -11,25 +11,25 @@ export default class SkyUi extends React.Component<ISkyUiProps, {}> {
     apiManager: null,
     client: null,
 
-    hasToken: false, // If false, logs O365 account
-    isOAuth: false, // When true, initialize Skype SDK
-    isSDK: false, // When true, logs to Skype servers
+    hasToken: false, // If false, logs O365 account.
+    isOAuth: false, // When true, initializes Skype SDK.
+    isSDK: false, // When true, logs to Skype servers.
     isLogged: false,
 
-    list: [], // Contacts list
+    list: [], // Contacts list.
 
     options: {}
   };
 
   /*
    * Unless isSDK is true initializes the SDK instance, calling its API, provided by the SkypeBootstrap.js file.
-   * Then call the LogIn function to connect the user to Lync Servers.
+   * Then calls the LogIn function to connect the user to Lync Servers.
    */
 
   public initSDK(): void {
     const { apiManager, client, isLogged } = this.state;
     (window as any).Skype.initialize(
-      { apiKey: this.props.apiKey }, // Provide Skype with the API key for Conversation Controller
+      { apiKey: this.props.apiKey }, // Provides Skype with the API key for Conversation Controller
       function(api) {
         if (!apiManager) this.setState({
           apiManager: api,
@@ -48,7 +48,7 @@ export default class SkyUi extends React.Component<ISkyUiProps, {}> {
 
     if (!isLogged) this.logIn();
 
-    }.bind(this)); // Keep the App context
+    }.bind(this)); // Keeps the App context.
   }
 
   /*
@@ -69,8 +69,8 @@ export default class SkyUi extends React.Component<ISkyUiProps, {}> {
   }
 
   /*
-   * Connects the user to Lync Server using their Office 365 license credentials and subscribes to their status' changes events
-   * When the user is successfully connected, get the diffusion list through getList() method.
+   * Connects the user to Lync Server using their Office 365 license credentials and subscribes to their status' changes events.
+   * When the user is successfully connected, get the diffusion list through the getList() method.
    */
 
   public logIn(): void {
@@ -106,7 +106,7 @@ export default class SkyUi extends React.Component<ISkyUiProps, {}> {
   }
 
   /*
-   * Check for the API and client's settings existence
+   * Checks for the API and client's settings existence.
    *
    * If an access_token parameter exists in the URL, it was successfully granted by the OAuth protocol. Otherwise execute it.
    * This will cause a quick redirection to Office 365 login page to access user's license credentials, which redirects back to the reply url (where the plugin is located)
@@ -135,7 +135,7 @@ export default class SkyUi extends React.Component<ISkyUiProps, {}> {
   }
 
   /*
-   * Execute the whole events chain to create the Skype instance
+   * Executes the whole events chain to create the Skype instance.
    */
 
   public componentDidMount(): void {
@@ -209,8 +209,8 @@ export default class SkyUi extends React.Component<ISkyUiProps, {}> {
       conversation.chatService.accept.enabled();
 
       /*
-       * Notify the user when they receive an ongoing conversation (Audio or Chat).
-       * If they accept, update the state with the conv settings and pass it down directly to the Controller
+       * Notifies the user when they receive an ongoing conversation (Audio or Chat).
+       * If they accept, updates the state with the conv settings and pass it down directly to the Controller
        */
 
       conversation.selfParticipant.audio.state.changed((newValue, reason, oldValue) => {

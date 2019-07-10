@@ -61,7 +61,7 @@ export default class SkyUiWebPart extends BaseClientSideWebPart<ISkyUiWebPartPro
       pages: [
         {
           header: {
-            description: 'Should only be edited by an experimented Admin user.'
+            description: 'Should only be edited by an experienced Admin user.'
           },
           groups: [
             {

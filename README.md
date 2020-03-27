@@ -8,6 +8,8 @@ It was meant for companies that wanted to see an updated list of a specific grou
 
 Generated with Yeoman, coded in TypeScript and React, its light interface is based on the Microsoft's SfB software's design.
 
+![](https://i.imgur.com/QsJ0VGz.png)
+
 ## Requires
 
 * Office 365
@@ -36,15 +38,3 @@ This package produces the following:
 * lib/* - intermediate-stage commonjs build artifacts
 * dist/* - the bundled script, along with other resources
 * deploy/* - all resources which should be uploaded to a CDN.
-
-### Build options
-
-- gulp clean - TODO
-- gulp test - TODO
-- gulp serve - TODO
-- gulp bundle - TODO
-- gulp package-solution - TODO
-
-## Disclaimer
-
-Most of the tools mentioned and used in the development of this plugin are the property of Microsoft, not mine.

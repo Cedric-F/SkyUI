@@ -22,7 +22,7 @@ Generated with Yeoman, coded in TypeScript and React, its light interface is bas
 
 Being no longer working on this module, I can no longer overview and guarantee an exact step by step guide, nor the availability of the tools used in the development and deployment process.
 
-Therefore, the whole process (from registration to deployment) is available here (https://docs.microsoft.com/fr-ca/skype-sdk/ucwa/unifiedcommunicationswebapi2_0)[here].
+Therefore, the whole process (from registration to deployment) is available [here](https://docs.microsoft.com/fr-ca/skype-sdk/ucwa/unifiedcommunicationswebapi2_0).
 
 ### Building the code
 

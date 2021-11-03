@@ -21,7 +21,7 @@
     "@types/webpack-env": "1.13.1",
     "react": "15.6.2",
     "react-dom": "15.6.2",
-    "validator": "^10.5.0"
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "@microsoft/sp-build-web": "1.5.1",
